@@ -1,7 +1,7 @@
+
+document.querySelector('#loginBtn').addEventListener('click',login)
 function login (){
-    if (localStorage.getItem('datosLogin', datosUsuario) == null){
-        alert ('Por favor inicie sesion')
-        
+    
         let usuario
         let correo
         let contraseña
@@ -9,30 +9,33 @@ function login (){
         let datosUsuario ={}
         //----------Recepcion de datos desde interfaz 
         //ingresar id
-        usuario = document.getElementById (//ingresar id)
+        usuario = document.getElementById ('username')
         usuario = usuario.value
-        correo = document.getElementById(//ingresar id)
-        correo = usuario.value
-        contraseña = document.getElementById(//ingresar id)
-        contraseña = usuario.value
+        correo = document.getElementById('email')
+        correo = correo.value
+        contraseña = document.getElementById('pass')
+        contraseña = contraseña.value
+        console.log(usuario)
+        console.log(correo)
+        console.log(contraseña)
         //---------------------------------------
         //datos hacia el json
         datosUsuario.usuario = usuario
         datosUsuario.correo = correo
         datosUsuario.contraseña = contraseña
-        
+        console.log(datosUsuario)
         //---------------------------------
         // localStorage    
         
         localStorage.setItem('datosLogin', JSON.stringify(datosUsuario))
-        
+        alert ("Sesion iniciada")
         // --------------------------------
-        }else{ console.log ('Sesion iniciada')}
+        // }else{ console.log ('Sesion iniciada')}
         
     }
     
     
-    export default login
+    
     
     
     
