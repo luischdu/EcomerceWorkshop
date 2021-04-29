@@ -12,9 +12,11 @@
         console.log(usuarios[0].contraseña)
         for(let i = 0; i< usuarios.length;i++){
             if (correo == usuarios[i].correo && contraseña == usuarios[i].contraseña){
-                alert ("sesion iniciada")
+                alert ("Sesion iniciada")
+                break
+                // return algunvalorquesenecesite
             }else{
-                alert("credenciales invalidas")
+                alert("Credenciales invalidas")
                 break
                 }
         }
