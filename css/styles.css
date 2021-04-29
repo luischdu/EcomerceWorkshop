@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+img {
+    padding: 1%;
+}
+
+.titulo-nav {
+    color: #FF4C13;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    ;
+}
+
+.eline img {
+    width: 7vw;
+}
+
+.size-btn button {
+    border-radius: 100%;
+    padding: auto;
+    border: none;
+}
+
+.size-btn button::selection {
+    border: black 1px;
+}
+
+@media (max-width:768px) {
+    .imgcaru {
+        visibility: visible;
+    }
+
+    .imgpc {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media (min-width:769px) {
+    .imgcaru {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .imgpc {
+        visibility: visible;
+
+    }
+}
