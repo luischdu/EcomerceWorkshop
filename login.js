@@ -1,37 +1,53 @@
-
-document.querySelector('#loginBtn').addEventListener('click',login)
-function login (){
+    // document.querySelector('#loginBtn').addEventListener('click',login)//Por favor linkear con los botones   
+    // document.querySelector('#registerBtn').addEventListener('click',register)
     
-        
-        let correo
-        let contraseña
-        
-        let datosUsuario ={}
+    function login (){
+        let correo = document.getElementById('email').value
+        let contraseña = document.getElementById('pass').value
+        let usuarios = JSON.parse(localStorage.getItem('usuarios'))
+        contraseña = document.getElementById('pass').value
+        console.log(correo)
+        console.log(usuarios)
+        console.log(usuarios[0].correo)
+        console.log(usuarios[0].contraseña)
+        for(let i = 0; i< usuarios.length;i++){
+            if (correo == usuarios[i].correo && contraseña == usuarios[i].contraseña){
+                alert ("sesion iniciada")
+            }else{
+                alert("credenciales invalidas")
+                break
+                }
+        }
+    }    
+    function register(){
+        // al no haber servidor se recupera la lista de usuarios
+        let usuarios = []
+        let datosUsuario = {}
         //----------Recepcion de datos desde interfaz 
-        //ingresar id
-        correo = document.getElementById('email')
-        correo = correo.value
-        contraseña = document.getElementById('pass')
-        contraseña = contraseña.value
-        
+        datosUsuario.nombre = document.getElementById('name').value
+        datosUsuario.correo = document.getElementById('email').value
+        datosUsuario.contraseña = document.getElementById('pass').value
         //---------------------------------------
-        //datos hacia el json
+       // localStorage    
+        if(localStorage.getItem('usuarios') == null){
+            console.log(usuarios)  
+            usuarios.push(datosUsuario)
+            localStorage.setItem('usuarios',JSON.stringify(usuarios))
+        }else{
+        usuarios = JSON.parse(localStorage.getItem('usuarios'))
+        localStorage.clear()
+        usuarios.push(datosUsuario)
+        localStorage.setItem('usuarios',JSON.stringify(usuarios))
+        }
         
-        datosUsuario.correo = correo
-        datosUsuario.contraseña = contraseña
-        console.log(datosUsuario)
-        //---------------------------------
-        // localStorage    
-        
-        localStorage.setItem('datosLogin', JSON.stringify(datosUsuario))
-        alert ("Sesion iniciada")
-     
-        
+    
     }
-    
-    
-    
-    
+    //requiere boton
+    function cerrarSesion()    {
+        localStorage.clear()
+    }
+  
+    //  export {moduloLogin}
     
     
     
