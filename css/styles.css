@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 
+/* *{
+    box-sizing: border-box;
+} */
 
-img {
-    padding: 1%;
+.rounded{
+    padding: 2%;
+}
+.img-central{
+  width:70%;
 }
 
 body{
@@ -23,17 +29,22 @@ body{
     ;
 }
 
-.eline img {
-    width: 10vw;
+.linea img {
+    width: 9vw;
 }
 
 .size-btn button {
     border-radius: 100%;
-    padding: auto;
-    border: none;
+width: 44px;
+height: 44px;
+background-color: white;
+border: white;
 }
 
-.size-btn button:hover::selection {
+.size-btn button:hover{
+    border: solid black 1px;
+}
+.size-btn button:checked{
     border: solid black 1px;
 }
 
@@ -83,16 +94,19 @@ body{
 
 .btn-add:hover{
     background-color: white;
-    color: #4276FB;
-    transform: scale(1.2);
+    color:#1D1D1D;
+    border: #1D1D1D 2px solid;
+    transform: scale(1.01);
 }
 
 .btn-buy:hover{
     background-color: white;
-    color: #1D1D1D;
+    color: #4276FB;
+    border: #4276FB 2px solid;
     
-    transform: scale(1.2);
+    transform: scale(1.01);
 }
+
 
 @media (max-width:768px) {
     .imgcaru {
@@ -101,22 +115,37 @@ body{
 
     .imgpc {
         visibility: hidden;
-        position: absolute;
     }
     .navbar{
         align-items: end;
     }
 }
 
+@media (max-width:768px) {
+     .imgpc {
+        display: none;
+    }
+    .eline{
+        display: none;
+    }
+    .img-central{
+        display: none;
+    }
+}
 
 @media (min-width:769px) {
     .imgcaru {
         visibility: hidden;
-        position: absolute;
     }
 
     .imgpc {
         visibility: visible;
 
+    }
+}
+
+@media (min-width:769px) {
+    .imgcaru {
+            display: none;
     }
 }
