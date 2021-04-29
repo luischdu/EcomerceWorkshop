@@ -48,3 +48,7 @@ let bodega = {
         }
     ]
 }
+
+function compraRealizada(productoNumero, cantidad){
+    productoNumero.inventario = productoNumero.inventario - cantidad
+}
