@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
 
 img {
     padding: 1%;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+#footer-banner{
+    margin-top: 20%;
 }
 
 .titulo-nav {
@@ -13,7 +24,7 @@ img {
 }
 
 .eline img {
-    width: 7vw;
+    width: 10vw;
 }
 
 .size-btn button {
@@ -22,8 +33,65 @@ img {
     border: none;
 }
 
-.size-btn button::selection {
-    border: black 1px;
+.size-btn button:hover::selection {
+    border: solid black 1px;
+}
+
+.btn-add {
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    color: white;
+
+    /* black */
+
+    background: #1D1D1D;
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    transition: all 1ms;
+}
+
+.btn-buy {
+    /* Auto Layout */
+
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    margin-top: 1px;
+
+
+    /* blue */
+
+    background: #4276FB;
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    order: 1;
+    flex-grow: 0;
+    margin: 2px;
+    transition: all 1ms;
+    
+}
+
+
+.btn-add:hover{
+    background-color: white;
+    color: #4276FB;
+    transform: scale(1.2);
+}
+
+.btn-buy:hover{
+    background-color: white;
+    color: #1D1D1D;
+    
+    transform: scale(1.2);
 }
 
 @media (max-width:768px) {
@@ -35,7 +103,11 @@ img {
         visibility: hidden;
         position: absolute;
     }
+    .navbar{
+        align-items: end;
+    }
 }
+
 
 @media (min-width:769px) {
     .imgcaru {
