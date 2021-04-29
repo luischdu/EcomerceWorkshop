@@ -15,9 +15,7 @@ function login (){
         correo = correo.value
         contraseña = document.getElementById('pass')
         contraseña = contraseña.value
-        console.log(usuario)
-        console.log(correo)
-        console.log(contraseña)
+        
         //---------------------------------------
         //datos hacia el json
         datosUsuario.usuario = usuario
@@ -29,8 +27,7 @@ function login (){
         
         localStorage.setItem('datosLogin', JSON.stringify(datosUsuario))
         alert ("Sesion iniciada")
-        // --------------------------------
-        // }else{ console.log ('Sesion iniciada')}
+     
         
     }
     
