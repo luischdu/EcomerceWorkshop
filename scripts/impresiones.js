@@ -11,14 +11,14 @@ document.querySelector('#precio3').innerHTML = '$ '+bodega[3].tallaM
 function agrandarMiniatura(){
     document.querySelector('#bigPhoto').src = this.getAttribute('src')
 }
-
+let seleccion = 0
 document.querySelectorAll('#moreClothes')[0].addEventListener('click',cambiarCatalogo)
 document.querySelectorAll('#moreClothes')[1].addEventListener('click',cambiarCatalogo)
 document.querySelectorAll('#moreClothes')[2].addEventListener('click',cambiarCatalogo)
 
 function cambiarCatalogo(){
 
-    let seleccion = this.getAttribute('index')
+     seleccion = this.getAttribute('index')
     
     if (seleccion==1){
         if(document.querySelectorAll('#moreClothes')[0].src== bodega[1].imagenNo2 ){
@@ -42,5 +42,32 @@ function cambiarCatalogo(){
     document.querySelector('#precioPrenda').innerHTML = '$' + bodega[seleccion].tallaM
     window.scrollTo(0, 0)
 }
+document.querySelector('#s-xs').addEventListener('click',cambioPrecio)
+document.querySelector('#s-s').addEventListener('click',cambioPrecio)
+document.querySelector('#s-m').addEventListener('click',cambioPrecio)
+document.querySelector('#s-l').addEventListener('click',cambioPrecio)
+document.querySelector('#s-xl').addEventListener('click',cambioPrecio)
+document.querySelector('#s-xxl').addEventListener('click',cambioPrecio)
 
-
+function cambioPrecio (){
+    
+    let talla = this.getAttribute('id')
+    console.log(seleccion)
+    
+    function preciosTalla(talla) {
+        const tamaños = {
+            's-xs': bodega[seleccion].tallaXS,
+            's-s': bodega[seleccion].tallaS,
+            's-m': bodega[seleccion].tallaM,
+            's-l': bodega[seleccion].tallaL,
+            's-xl': bodega[seleccion].tallaXL,
+            's-xxl': bodega[seleccion].tallaXXL,
+        } 
+        return tamaños[talla]
+    }
+    
+    document.querySelector('#precioPrenda').innerHTML = '$' + preciosTalla(talla)
+    
+   
+    
+}                        
