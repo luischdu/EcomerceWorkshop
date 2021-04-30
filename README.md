@@ -11,15 +11,15 @@ WorkShop 1 AG
 
 ## 🔍 Vistas 
 
-> Img aqui
+> Se muestran las vistas de la app para pc y versión mobil.
 
 ### 💻 Desktop
 
-> Img aquí
+<img src = "https://github.com/luischdu/EcomerceWorkshop/blob/main/images/v-pc.png" width=60%>
 
 ### 📱 Mobile
 
-> Img aquí
+<img align="center" src="https://github.com/luischdu/EcomerceWorkshop/blob/main/images/v-cp.png" width=50%/>
 
 ## 🌟 Colaboradores
 
