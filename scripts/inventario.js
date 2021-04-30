@@ -1,9 +1,10 @@
 let bodega = 
-     [{
+     [{     nombre:"Crown Sweatshirt",
             imagenNo1:'https://imagizer.imageshack.com/img922/6082/PRGgVV.png',
             imagenNo2:'https://imagizer.imageshack.com/img924/2289/7aHA06.png',
             imagenNo3:'https://imagizer.imageshack.com/img923/5338/yDweCx.png',
             imagenNo4:'https://imagizer.imageshack.com/img924/1899/CAZZuK.png',
+            tallaXS: 55000 ,
             tallaS: 75000 ,
             tallaM: 80000 ,
             tallaL: 85000 ,
@@ -15,9 +16,11 @@ let bodega =
              ,
             
                 {
+            nombre:"Fresh Stripe Sweater",
             imagenNo1:'https://imagizer.imageshack.com/img924/925/TDrFPi.png',
             imagenNo2:'https://imagizer.imageshack.com/img923/7853/Qri38y.png',
             imagenNo3:'https://imagizer.imageshack.com/img922/6748/Jmu58N.png',
+            tallaXS: 55000 ,
             tallaS: 80000 ,
             tallaM: 82000 ,
             tallaL: 85000 ,
@@ -28,10 +31,11 @@ let bodega =
             }
          ,
             
-        {   imagenNo1:'https://imagizer.imageshack.com/img923/539/Fj2CQP.png',
+        {   nombre:"Fresh Black Tie-Dye Hoodie",
+            imagenNo1:'https://imagizer.imageshack.com/img923/539/Fj2CQP.png',
             imagenNo2:'https://imagizer.imageshack.com/img922/3017/IrsV0Q.png',
             imagenNo3:'https://imagizer.imageshack.com/img922/4887/7Y9qeW.png',
-            
+            tallaXS: 55000 ,
             tallaS: 60000 ,
             tallaM: 70000 ,
             tallaL: 75000 ,
@@ -42,11 +46,12 @@ let bodega =
         }
     ,
      
-        {
+        {   nombre:"Pose For It Tee",
             imagenNo1:'https://imagizer.imageshack.com/img923/7109/1Bc1h0.png',
             imagenNo2:'https://imagizer.imageshack.com/img924/8972/0zBQMN.png',
             imagenNo3:'https://imagizer.imageshack.com/img923/3486/ofR9Ai.png',
-            tallaS: 55000 ,
+            tallaXS: 55000 ,
+            tallaS: 57000 ,
             tallaM: 60000 ,
             tallaL: 62000 ,
             tallaXL: 70000 ,
