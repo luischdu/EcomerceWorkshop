@@ -19,7 +19,7 @@ WorkShop 1 AG
 
 ### 📱 Mobile
 
-<img align="center" src="https://github.com/luischdu/EcomerceWorkshop/blob/main/images/v-cp.png" width=50%/>
+<img align="center" src="https://github.com/luischdu/EcomerceWorkshop/blob/main/images/v-cp.png" width=20%/>
 
 ## 🌟 Colaboradores
 
